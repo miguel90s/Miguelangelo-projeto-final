@@ -26,7 +26,7 @@ body{
   .nav-links {
     width: 100%;
     height: 90px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive;
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -95,7 +95,7 @@ body{
   padding: 40px;
   background-color: #f3f1f1b0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   gap: 25px; 
   max-width: 1100px;
   margin: 0 auto;
@@ -160,3 +160,120 @@ body{
   background-color: #a30000;
 }
 
+.colaboradores{
+  max-width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 40px 20px 0 20px;
+  text-align: center;
+}
+
+.colaboradores h1{
+    color: darkred;
+    width: 700px;
+    margin: auto;
+    font-size: 30px;
+    font-family: cursive;
+    text-decoration: underline;
+    margin-bottom: 15px;
+ }
+
+ .colaboradores p{
+  color: gray;
+  font-size: 20px;
+  width: 993px;
+  height: 49px;
+  margin: auto;
+  font-family: monospace;
+  margin-bottom: 100px;
+ }
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea; 
+}
+
+.fundo-cinza-lateral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea; 
+}
+
+.quadro-branco-conteudo {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff; 
+    padding: 60px 40px; 
+}
+
+
+.quem-somos {
+    text-align: center;
+}
+
+.section-header h2 {
+    font-family: 'Playball', cursive;
+    font-size: 3rem;
+    color: #8b1d1d;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.section-header .subtitle {
+    font-size: 1.1rem;
+    color: #999999;
+    margin-bottom: 60px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row; /* Força o alinhamento horizontal (lado a lado) */
+    justify-content: center; /* Centraliza o grupo na tela */
+    gap: 40px; /* Espaço firme entre uma pessoa e outra */
+    flex-wrap: nowrap; /* IMPEDE que elas quebrem para a linha de baixo */
+    width: 100%;
+}
+
+.team-member {
+    flex: 0 1 auto; /* Permite que eles se ajustem sem esmagar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-family: 'Playball', cursive;
+    font-size: 2.2rem;
+    color: #8b1d1d;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.team-member .role {
+    font-size: 0.95rem;
+    color: #888888;
+    font-weight: 300;
+}
