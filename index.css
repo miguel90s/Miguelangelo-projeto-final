@@ -235,15 +235,17 @@ body {
 
 .team-container {
     display: flex;
-    flex-direction: row; /* Força o alinhamento horizontal (lado a lado) */
-    justify-content: center; /* Centraliza o grupo na tela */
-    gap: 40px; /* Espaço firme entre uma pessoa e outra */
-    flex-wrap: nowrap; /* IMPEDE que elas quebrem para a linha de baixo */
+    align-items:center ;
+    padding: 200px;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 40px;
+    flex-wrap: nowrap;
     width: 100%;
 }
 
 .team-member {
-    flex: 0 1 auto; /* Permite que eles se ajustem sem esmagar */
+    flex: 0 1 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
